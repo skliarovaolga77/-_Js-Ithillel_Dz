@@ -11,7 +11,7 @@ export let users = [
 ];
 // console.log(users);
 
-//const ROLES
+
 export const userTypes = {
   student: info => new Student(info),
   admin: info => new Admin(info),
