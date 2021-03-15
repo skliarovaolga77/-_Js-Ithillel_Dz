@@ -1,20 +1,12 @@
 import {users,userTypes} from './script.js';
 
-class Users {
+export class Users {
   constructor(roles, gradations) {
     this.info = {
       roles: roles,
       gradations: gradations
     }
   }
-  static createUsers(users){
-
-		let usersWithClass = users.map(user=>{
-			return userTypes[user.type] && userTypes[user.type](user.name);
-		});
-
-		console.log(usersWithClass);
-	}
 
   //забрали данные 
   static async getUsers(file) {
@@ -22,6 +14,7 @@ class Users {
     let request = await fetch(file),
       //ответ получим в response
       data = await request.json();
+
     Users.createUsers(data);
   }
 
@@ -53,7 +46,7 @@ class Users {
       let currentUser = users[key];
       // console.log(currentUser);
 
-      let currentUserWithClass = ROLES[currentUser.role] && ROLES[currentUser.role](allUsers.info);
+      let currentUserWithClass = userTypes[currentUser.role] && userTypes[currentUser.role](allUsers.info);
       // console.log(currentUserWithClass);
 
       for (let key in currentUser) {
@@ -110,5 +103,3 @@ class Users {
   
   
 }
-
-Users.getUsers('data.json');

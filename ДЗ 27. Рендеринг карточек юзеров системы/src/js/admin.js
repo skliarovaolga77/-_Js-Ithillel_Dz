@@ -1,6 +1,6 @@
-import {User} from './user.js';
+import {Users} from './user.js';
 
-class Admin extends Users {
+export class Admin extends Users {
   constructor(info) {
     super();
     this.info = info;

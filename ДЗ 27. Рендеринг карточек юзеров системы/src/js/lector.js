@@ -1,6 +1,6 @@
-import {User} from './user.js';
+import {Users} from './user.js';
 
-class Lector extends Users {
+export class Lector extends Users {
   constructor(info) {
     super();
     this.info = info;
