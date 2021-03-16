@@ -1,1 +1,0 @@
-export let avanger = () => 'Hello, Avanger';
