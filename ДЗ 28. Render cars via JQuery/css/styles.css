@@ -1,0 +1,130 @@
+body {
+  font-family: "Montserrat", "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+body .logo {
+  width: 100px;
+  margin: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #333333;
+}
+
+.title h1 {
+  font-size: 23px;
+  font-weight: 300;
+  margin: 4px 0 0 0;
+  line-height: 1;
+}
+
+.title h2 {
+  font-size: 50px;
+  margin-top: 5px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.title .colors {
+  font-size: 23px;
+  font-weight: 300;
+  margin-top: 5px;
+  line-height: 1;
+  color: #f35626;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container .mySlides {
+  display: block;
+}
+
+.slideshow-container .mySlides img {
+  width: 100%;
+}
+
+.slideshow-container .mySlides .text {
+  color: #cccccc;
+  font-size: 15px;
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  text-align: center;
+}
+
+.color-picker {
+  margin: 0px 10px 60px 10px;
+  text-align: center;
+}
+
+.color-picker .dot {
+  cursor: pointer;
+  height: 35px;
+  width: 25px;
+  margin: 1px 2px;
+  background-color: #bbb;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.color-picker .solid-black {
+  background-color: #2E2E2E;
+}
+
+.color-picker .midnight-silver {
+  background-color: #43424F;
+}
+
+.color-picker .obsidian-black {
+  background-color: #212252;
+}
+
+.color-picker .silver {
+  background-color: #A8A1A2;
+}
+
+.color-picker .white {
+  background-color: #ECEBEC;
+}
+
+.color-picker .red {
+  background-color: #c31130;
+}
+
+.color-picker .orange {
+  background-color: #F68B28;
+}
+
+.color-picker .yellow {
+  background-color: #FBB842;
+}
+
+.color-picker .glacier-blue {
+  background-color: #BBCBD0;
+}
+
+.color-picker .electric-blue {
+  background-color: #0F93DA;
+}
+
+.color-picker .green-lotus {
+  background-color: #3d7866;
+}
+
+.color-picker .green-lotus .active {
+  box-shadow: 0 3px 6px #00000014, 0 3px 6px #00000026;
+  margin-bottom: 1px;
+}
+
+.color-picker .green-lotus:hover {
+  box-shadow: 0 3px 6px #00000014, 0 3px 6px #00000026;
+  margin-bottom: 1px;
+}
+/*# sourceMappingURL=styles.css.map */
