@@ -1,6 +1,7 @@
 #taskManager {
   border: 2px solid black;
   width: 500px;
+  height: 300px;
   margin: auto;
 }
 
@@ -12,6 +13,7 @@
 
 #taskManager .wrapper .first-list {
   border: 2px solid blue;
+  padding: 10px;
   width: 50%;
   height: 250px;
   margin-right: 20px;
@@ -24,6 +26,7 @@
 
 #taskManager .wrapper .second-list {
   border: 2px solid green;
+  padding: 10px;
   width: 50%;
   height: 250px;
 }
