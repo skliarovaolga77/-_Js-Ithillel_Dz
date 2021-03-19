@@ -38,6 +38,7 @@ body .logo {
 
 .slideshow-container {
   max-width: 1000px;
+  height: 420px;
   position: relative;
   margin: auto;
 }
@@ -83,6 +84,10 @@ body .logo {
 }
 
 .color-picker .obsidian-black {
+  background-color: #000;
+}
+
+.color-picker .deep-blue {
   background-color: #212252;
 }
 

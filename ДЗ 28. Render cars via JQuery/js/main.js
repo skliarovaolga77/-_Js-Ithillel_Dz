@@ -32,6 +32,7 @@ class Car {
                                         <div class="text">Black</div>
                                       </div>
                                     `;
+                                    
       colorPicker.innerHTML += `<span class="dot ${key}" data-color="${key}"></span>`;
     }
 
@@ -68,6 +69,7 @@ class Car {
                                         <div class="text">${(selectedColor[0].toUpperCase() + selectedColor.slice(1))}</div>
                                       </div>
                                     `;
+   
   }
 
 }
