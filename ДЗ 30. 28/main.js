@@ -1,4 +1,4 @@
-Vue.component('wrapper', {
+  Vue.component('wrapper', {
 
     data() {
       return {
