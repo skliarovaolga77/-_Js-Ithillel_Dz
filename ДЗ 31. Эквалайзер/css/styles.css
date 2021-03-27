@@ -1,5 +1,6 @@
 #equalizer {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -9,12 +10,7 @@
 
 #equalizer .block {
   height: 300px;
-  background-color: transparent;
-  margin-bottom: 10px;
+  background-color: lightgray;
 }
 
-#equalizer .block-color {
-  background-color: red;
-  height: 100px;
-}
 /*# sourceMappingURL=styles.css.map */

@@ -1,35 +1,30 @@
 Vue.component('elements', {
-  props: {
-    my_colors:{
-      default: []
-    },
-    methods: {
-      classColor(){
-        console.log(this.my_colors);
-        //v-for="color in my_colors"
-        this.my_colors.forEach((color)=>{
-          console.log(color);
-          return color;
-        });
-      }
+  props: ['color'],
+
+  methods: {
+    setHeight(e) {
+      // в качество единственно аргумента приходит объект  e, с описанием события
+      // что бы это значение перезаписалось в переменную height нужно через $set перезаписать полученное значение
+      this.$set(this, 'height', (e.target.value) * 3 + 'px');
+    }
+  },
+  data() {
+    return {
+      height: '300px'
     }
   },
 
-  template:`<div class="wrapper">
-              <div class="block" ></div>
-              <div class="block-color"></div>
-              <input type="range" id="range" min="1" value="1" step="1" />
+  template: `<div class="wrapper">
+                <div class="block" :style="{height: height, background: color}"></div>
+              <input value="300" type="range" min="1" step="1" @change="setHeight" />
           </div>`,
-  methods: {
-    
-    
-  }
+
 });
 
 
 let Equalizer = new Vue({
   el: '#equalizer',
   data: {
-    	colors: ['red','blue','green','black', 'orange', 'bardo', 'pink']
+    colors: ['red', 'blue', 'green', 'black', 'orange', 'bardo', 'pink']
   }
 });
